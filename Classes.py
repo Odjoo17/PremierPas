@@ -1,4 +1,4 @@
-
+# Exercice en ligne permettant d'apprendre la notion de classes
 class Etudiant: # 1ère classe
 
     def __init__(self,d_nom,d_prenom,d_notes = []) -> None:
