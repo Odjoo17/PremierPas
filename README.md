@@ -16,4 +16,4 @@
 
 🎨 My skills : Python, Django, Git, Airflow, SQL, Excel
 
-❓ If you have any idea of project, please leave me a comment here or on LinkedIn :)
+❓ If you have any idea of project, please leave me a comment [here](https://github.com/Odjoo17/PremierPas/blob/main/PROJECT_IDEAS.md) or on LinkedIn :)
