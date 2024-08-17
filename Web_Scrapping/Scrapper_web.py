@@ -57,8 +57,21 @@ def data_analysis():
     with open('medals_data.pkl', 'rb') as f:
         # Load the Python object from the pickle file
         loaded_data = pk.load(f)
-    print(loaded_data)
+    df_total_medals_per_year = pd.DataFrame(columns=["Year","Total medals"])
+    print(df_total_medals_per_year)
+    for elt in loaded_data:
+        df = loaded_data[elt]
+        col = df.columns
+        if "Rang" in col :
+            print(elt,"\n",df)
+            n = len(df)
+            #print(n)
+            tot_medals = (df.iloc[n-1]["Total"])
+            print(tot_medals)
+            df_total_medals_per_year = (elt,tot_medals)
+    print(df_total_medals_per_year)
+            #print (elt,df)
+            #print(df_medals_concat)
     
-
 #scrapping_data()
 data_analysis()
